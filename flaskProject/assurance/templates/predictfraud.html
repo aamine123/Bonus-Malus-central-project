@@ -1,0 +1,242 @@
+{% extends "dashboard-crm.html" %}
+{% block content %}
+
+   <br>
+
+<div class="container">
+<div class="col-sm">
+<div class="card">
+<div class="card-body">
+    <div class="wrap-contact100">
+    <div class="d-flex justify-content-center align-items-center container ">
+
+    <div class="row " style="text-align: center">
+<form class="contact100-form validate-form" action="{{ url_for('predictfraud')}}" method="post">
+    <div class="form-group">
+    <h1 class="contact100-form-title" style="color: #0c5460">Detect fraudelent client </h1>
+
+    <br>
+    <div id="info-compagnie">
+        <h4 style="color: #00d8d2"> Compagnies Informations</h4>
+            <div>
+                <label for="codeCompagnie-select"> Compagnie:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="codeCompagnie"  id="codeCompagnie-select">
+            <option value="">--Please choose your compagnie--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+        </select>
+            </div>
+            <br>
+            <div>
+                <label for="codeAgence"> Agence Code:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="number" id="codeAgence" name="codeAgence" min="1" max="1048" placeholder="Select...">
+            </div>
+    </div>
+
+    <br>
+    <div id="info-client">
+        <h4 style="color: #00d8d2"> Client Informations</h4>
+            <div>
+                <label class="label-input100" for="codeUsage-select"> Usage Code:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="codeUsage"  id="codeUsage-select">
+            <option value="">--Please choose an option--</option>
+            <option value="1">Privé et professionnel</option>
+            <option value="2">Agricole1 véhicule dont le PTC < 3500 kg</option>
+            <option value="3">Agricole 2 véhicule dont le PTC > 3500 kg</option>
+            <option value="4">Agricole Tracteur et Moissonneuse Batteuse</option>
+            <option value="5">Utilitaire 1 véhicule dont le PTC < 3500 kg</option>
+            <option value="6">Utilitaire 2 véhicule dont le PTC > 3500 kg</option>
+            <option value="7">Transport public de marchandise</option>
+            <option value="8">Transport public de voyageurs</option>
+            <option value="9">Transport privé de personnes</option>
+            <option value="10">Taxi</option>
+            <option value="11">Auto-Ecole</option>
+            <option value="12">Louage</option>
+            <option value="13">Transport Rural</option>
+            <option value="14">Agences de Voyage et Hôtels</option>
+            <option value="15">Location</option>
+            <option value="16">Engin de Chantiers</option>
+            <option value="17">autres usages (Ambulance / Corbillard...)</option>
+        </select>
+                <span class="focus-input100"></span>
+            </div>
+            <br>
+            <div>
+                <label for="classeBonusMalus-select">BonusMalus Class:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="classeBonusMalus"  id="classeBonusMalus-select">
+            <option value="">--Please choose a class--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+        </select>
+            </div>
+            <br>
+             <div>
+                <label for="num_accidents-select">Number of accidents:</label>
+                <select name="num_accidents"  id="num_accidents-select">
+            <option value="">--Please choose a number--</option>
+                    <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+            </div>
+    </div>
+
+	<br>
+    <div id="info-vehicule">
+            <h4 style="color: #00d8d2"> Car Informations</h4>
+                <div>
+                    <label>Car Brand:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		            <input type="text" name="codeMarque" placeholder="codeMarque " required="required" />
+                </div>
+                <br>
+                <div>
+                    <label for="puissanceFiscal">Puissance Fiscal:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" id="puissanceFiscal" name="puissanceFiscal" min="1" max="1048" placeholder="Select..." >
+                </div>
+                <br>
+                <div>
+                    <label for="energie-select">Fuel:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="energie"  id="energie-select">
+            <option value="">--Please choose an option--</option>
+            <option value="0">Electricité</option>
+            <option value="1">ESS-GAZ GPL</option>
+            <option value="2">ESS-GNC</option>
+            <option value="3">ESSENCE</option>
+            <option value="4">ESSENCE-ELECTRICITE</option>
+            <option value="5">GASOIL</option>
+            <option value="6">GAZ GPL</option>
+            <option value="7">Unkown</option>
+        </select>
+                </div>
+    </div>
+
+
+    <br>
+     <div id="info-Police">
+            <h4 style="color: #00d8d2"> Policy Informations</h4>
+                <div>
+                    <label for="typeIntermediaire-select"> Intermediaite type:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="typeIntermediaire"  id="typeIntermediaire-select">
+            <option value="">--Please choose an option--</option>
+            <option value="1">Agent</option>
+            <option value="2">Bureau</option>
+            <option value="3">Courtier</option>
+        </select>
+                </div>
+                <br>
+                <div>
+                    <label for="naturePolice-select">Police Nature:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="naturePolice"  id="typePolice-select">
+            <option value="">--Please choose an option--</option>
+            <option value="0">Résilier</option>
+            <option value="1">Vigueur</option>
+        </select>
+                </div>
+                <br>
+                <div>
+                    <label for="typePolice-select">Policy Type:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="typePolice"  id="typePolice-select">
+            <option value="">--Please choose an option--</option>
+            <option value="1">Individuelle</option>
+            <option value="0">Flotte</option>
+        </select>
+                </div>
+                <br>
+                <div>
+                    <label for="Etat_Police-select">Policy State:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="Etat_Police"  id="Etat_Police-select">
+            <option value="">--Please choose an option--</option>
+            <option value="2">V</option>
+            <option value="0">R</option>
+        </select>
+                </div>
+         </div>
+    <br>
+
+
+        <button style="left: 50px;right: 50px" type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </div>
+
+       {% if prediction_text==0 %}
+         <h1 style="color:#7777bb">Good client</h1>
+     {% elif %}
+        <h1 style="color:#7777bb">Fraudelent Client</h1>
+    {% endif %}
+    </form>
+
+    </div>
+    </div>
+
+
+
+
+
+
+</div>
+</div>
+</div>
+    </div>
+    </div>
+{% endblock %}
+
+
+
+<style>
+    label,
+footer {
+    font-family: sans-serif;
+}
+
+label {
+    font-size: 1rem;
+    padding-right: 10px;
+}
+
+select {
+    font-size: .9rem;
+    padding: 2px 5px;
+}
+
+footer {
+    font-size: .8rem;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.output {
+    position: relative;
+}
+input[type=number]{
+    width: 500px;
+}
+</style>

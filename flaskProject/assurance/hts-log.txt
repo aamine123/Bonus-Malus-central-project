@@ -1,0 +1,35 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 05 May 2021 18:53:06 at https://coderthemes.com/hyper/creative/dashboard-crm.html +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://coderthemes.com/hyper/creative/dashboard-crm.html -O1 "C:\Users\Amine\Desktop\dash template\tempalte" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+18:55:30	Warning: 	file not stored in cache due to bogus state (incomplete type with OK (200), size 0): https://apexcharts.com/samples/assets/series1000.js
+18:55:56	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/assets/fontsunicons.eot?34404611 (from https://coderthemes.com/hyper/creative/assets/css/icons.min.css)
+18:56:06	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/true/ (from https://coderthemes.com/hyper/creative/assets/js/vendor.min.js)
+18:56:06	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/isDSTShifted is deprecated. See http://momentjs.com/guides/ (from https://coderthemes.com/hyper/creative/assets/js/vendor.min.js)
+18:56:06	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/rtl.min.css (from https://coderthemes.com/hyper/creative/assets/js/app.min.js)
+18:56:06	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/ (from https://coderthemes.com/hyper/creative/assets/js/vendor/simplemde.min.js)
+18:56:06	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/GET (from https://coderthemes.com/hyper/creative/assets/js/vendor/simplemde.min.js)
+18:56:06	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/codemirror/addon/edit/continuelist.js (from https://coderthemes.com/hyper/creative/assets/js/vendor/simplemde.min.js)
+18:56:06	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/codemirror/addon/display/fullscreen.js (from https://coderthemes.com/hyper/creative/assets/js/vendor/simplemde.min.js)
+18:56:06	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/codemirror/mode/markdown/markdown.js (from https://coderthemes.com/hyper/creative/assets/js/vendor/simplemde.min.js)
+18:56:06	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/codemirror/addon/mode/overlay.js (from https://coderthemes.com/hyper/creative/assets/js/vendor/simplemde.min.js)
+18:56:06	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/codemirror/addon/display/placeholder.js (from https://coderthemes.com/hyper/creative/assets/js/vendor/simplemde.min.js)
+18:56:06	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/codemirror/addon/selection/mark-selection.js (from https://coderthemes.com/hyper/creative/assets/js/vendor/simplemde.min.js)
+18:56:06	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/codemirror/mode/gfm/gfm.js (from https://coderthemes.com/hyper/creative/assets/js/vendor/simplemde.min.js)
+18:56:06	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/codemirror/mode/xml/xml.js (from https://coderthemes.com/hyper/creative/assets/js/vendor/simplemde.min.js)
+18:56:06	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/blots/ (from https://coderthemes.com/hyper/creative/assets/js/vendor/quill.min.js)
+18:56:06	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/formats/ (from https://coderthemes.com/hyper/creative/assets/js/vendor/quill.min.js)
+18:56:06	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/Data needs to have a dataByTopic or data property. See more in http://britecharts.github.io/britecharts/global.html (from https://coderthemes.com/hyper/creative/assets/js/vendor/britecharts.min.js)
+18:56:06	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/typeahead.js (from https://coderthemes.com/hyper/creative/assets/js/vendor/typeahead.bundle.min.js)
+18:56:06	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/xl/worksheets/sheet1.xml (from https://coderthemes.com/hyper/creative/assets/js/vendor/buttons.html5.min.js)
+18:56:06	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/xl/workbook.xml (from https://coderthemes.com/hyper/creative/assets/js/vendor/buttons.html5.min.js)
+18:56:06	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/xl/styles.xml (from https://coderthemes.com/hyper/creative/assets/js/vendor/buttons.html5.min.js)
+18:56:06	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/[Content_Types].xml (from https://coderthemes.com/hyper/creative/assets/js/vendor/buttons.html5.min.js)
+18:56:06	Error: 	"Not Found" (404) at link https://coderthemes.com/hyper/creative/buttons.pdf (from https://coderthemes.com/hyper/creative/assets/js/vendor/buttons.html5.min.js)
+
+HTTrack Website Copier/3.49-2 mirror complete in 3 minutes 0 seconds : 350 links scanned, 326 files written (28296739 bytes overall) [12173946 bytes received at 67633 bytes/sec], 19469840 bytes transferred using HTTP compression in 237 files, ratio 16%, 31.8 requests per connection
+(23 errors, 1 warnings, 0 messages)

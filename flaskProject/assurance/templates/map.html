@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7b050925b8034801ab144e3d3b3c939e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7b050925b8034801ab144e3d3b3c939e" ></div>
+        
+</body>
+<script>    
+    
+            var map_7b050925b8034801ab144e3d3b3c939e = L.map(
+                "map_7b050925b8034801ab144e3d3b3c939e",
+                {
+                    center: [34.6113892, 8.7590835],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1a7f5151c68a41ea80191404f3ee97d8 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7b050925b8034801ab144e3d3b3c939e);
+        
+    
+            var marker_e499d6647d59486dbed7ccbb5a7af259 = L.marker(
+                [36.8008325, 10.1554105],
+                {}
+            ).addTo(map_7b050925b8034801ab144e3d3b3c939e);
+        
+    
+        var popup_c8f6e3fa340c46a8b5eee151ca8a5fbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_394ea887ecc74855a8d6f033c46af94c = $(`<div id="html_394ea887ecc74855a8d6f033c46af94c" style="width: 100.0%; height: 100.0%;">The first state </div>`)[0];
+            popup_c8f6e3fa340c46a8b5eee151ca8a5fbb.setContent(html_394ea887ecc74855a8d6f033c46af94c);
+        
+
+        marker_e499d6647d59486dbed7ccbb5a7af259.bindPopup(popup_c8f6e3fa340c46a8b5eee151ca8a5fbb)
+        ;
+
+        
+    
+    
+            marker_e499d6647d59486dbed7ccbb5a7af259.bindTooltip(
+                `<div>
+                     Tunis
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f415550a94149f7803e483887b2ba27 = L.marker(
+                [34.7555058, 10.6612224],
+                {}
+            ).addTo(map_7b050925b8034801ab144e3d3b3c939e);
+        
+    
+        var popup_c8cd6bd245da40599cb4928f9c9dd2a2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0830f96d3bf48d5aaf8b6975eddbad1 = $(`<div id="html_d0830f96d3bf48d5aaf8b6975eddbad1" style="width: 100.0%; height: 100.0%;">The second state</div>`)[0];
+            popup_c8cd6bd245da40599cb4928f9c9dd2a2.setContent(html_d0830f96d3bf48d5aaf8b6975eddbad1);
+        
+
+        marker_3f415550a94149f7803e483887b2ba27.bindPopup(popup_c8cd6bd245da40599cb4928f9c9dd2a2)
+        ;
+
+        
+    
+    
+            marker_3f415550a94149f7803e483887b2ba27.bindTooltip(
+                `<div>
+                     Sfax
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51f19595e6f940688c45f53a9db4ae32 = L.marker(
+                [36.8688529, 10.1353404],
+                {}
+            ).addTo(map_7b050925b8034801ab144e3d3b3c939e);
+        
+    
+        var popup_a549d066833a4c00908f179c89196f2f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50f6cf9ec1504a4d85985049c351f8e4 = $(`<div id="html_50f6cf9ec1504a4d85985049c351f8e4" style="width: 100.0%; height: 100.0%;">The third state</div>`)[0];
+            popup_a549d066833a4c00908f179c89196f2f.setContent(html_50f6cf9ec1504a4d85985049c351f8e4);
+        
+
+        marker_51f19595e6f940688c45f53a9db4ae32.bindPopup(popup_a549d066833a4c00908f179c89196f2f)
+        ;
+
+        
+    
+    
+            marker_51f19595e6f940688c45f53a9db4ae32.bindTooltip(
+                `<div>
+                     Ariana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de5315b74ef8410a9bb5c01747fbcd3f = L.marker(
+                [35.8283295, 10.5830349],
+                {}
+            ).addTo(map_7b050925b8034801ab144e3d3b3c939e);
+        
+    
+        var popup_1d4bd7bdb5a7403c89ccb016c69d5c05 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_729a374818e34a908f43cd1262f030f1 = $(`<div id="html_729a374818e34a908f43cd1262f030f1" style="width: 100.0%; height: 100.0%;">The fourth state</div>`)[0];
+            popup_1d4bd7bdb5a7403c89ccb016c69d5c05.setContent(html_729a374818e34a908f43cd1262f030f1);
+        
+
+        marker_de5315b74ef8410a9bb5c01747fbcd3f.bindPopup(popup_1d4bd7bdb5a7403c89ccb016c69d5c05)
+        ;
+
+        
+    
+    
+            marker_de5315b74ef8410a9bb5c01747fbcd3f.bindTooltip(
+                `<div>
+                     Sousse
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4df9c28d1dc84dbaa2619f5b1c3d57d2 = L.marker(
+                [36.7464825, 10.2171373],
+                {}
+            ).addTo(map_7b050925b8034801ab144e3d3b3c939e);
+        
+    
+        var popup_ca0b5051f75d49468ba5923093ada15d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a38337d61bcb44c28ac912d14ba38232 = $(`<div id="html_a38337d61bcb44c28ac912d14ba38232" style="width: 100.0%; height: 100.0%;">The fifth state</div>`)[0];
+            popup_ca0b5051f75d49468ba5923093ada15d.setContent(html_a38337d61bcb44c28ac912d14ba38232);
+        
+
+        marker_4df9c28d1dc84dbaa2619f5b1c3d57d2.bindPopup(popup_ca0b5051f75d49468ba5923093ada15d)
+        ;
+
+        
+    
+    
+            marker_4df9c28d1dc84dbaa2619f5b1c3d57d2.bindTooltip(
+                `<div>
+                     Ben Arous
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53b2d6d37bbc458cbce19e339103df77 = L.marker(
+                [36.4523901, 10.6803222],
+                {}
+            ).addTo(map_7b050925b8034801ab144e3d3b3c939e);
+        
+    
+        var popup_1ea0ec343d42465fb43390195e2956f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4ff3551b43c94f06b9e7f8e8f49e1dce = $(`<div id="html_4ff3551b43c94f06b9e7f8e8f49e1dce" style="width: 100.0%; height: 100.0%;">The sixth state</div>`)[0];
+            popup_1ea0ec343d42465fb43390195e2956f9.setContent(html_4ff3551b43c94f06b9e7f8e8f49e1dce);
+        
+
+        marker_53b2d6d37bbc458cbce19e339103df77.bindPopup(popup_1ea0ec343d42465fb43390195e2956f9)
+        ;
+
+        
+    
+    
+            marker_53b2d6d37bbc458cbce19e339103df77.bindTooltip(
+                `<div>
+                     Nabeul
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6545d9b00c8b43ab9269b10efe9c895a = L.marker(
+                [35.7542668, 10.7754201],
+                {}
+            ).addTo(map_7b050925b8034801ab144e3d3b3c939e);
+        
+    
+        var popup_051557f07ea24ccc8f8884f1b81e295e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a2cc96f1c2934478a2292ae4d11d284a = $(`<div id="html_a2cc96f1c2934478a2292ae4d11d284a" style="width: 100.0%; height: 100.0%;">The seventh state</div>`)[0];
+            popup_051557f07ea24ccc8f8884f1b81e295e.setContent(html_a2cc96f1c2934478a2292ae4d11d284a);
+        
+
+        marker_6545d9b00c8b43ab9269b10efe9c895a.bindPopup(popup_051557f07ea24ccc8f8884f1b81e295e)
+        ;
+
+        
+    
+    
+            marker_6545d9b00c8b43ab9269b10efe9c895a.bindTooltip(
+                `<div>
+                     Monastir
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0c711016cec43959605cc012d8fec1d = L.marker(
+                [33.8892778, 10.0851486],
+                {}
+            ).addTo(map_7b050925b8034801ab144e3d3b3c939e);
+        
+    
+        var popup_09e264ed1bee43a8b60cdff9cf983fa1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_17dc0226824f46cc9f95134702d9635c = $(`<div id="html_17dc0226824f46cc9f95134702d9635c" style="width: 100.0%; height: 100.0%;">The eighth state</div>`)[0];
+            popup_09e264ed1bee43a8b60cdff9cf983fa1.setContent(html_17dc0226824f46cc9f95134702d9635c);
+        
+
+        marker_e0c711016cec43959605cc012d8fec1d.bindPopup(popup_09e264ed1bee43a8b60cdff9cf983fa1)
+        ;
+
+        
+    
+    
+            marker_e0c711016cec43959605cc012d8fec1d.bindTooltip(
+                `<div>
+                     Gabes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
